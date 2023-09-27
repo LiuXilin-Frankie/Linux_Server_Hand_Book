@@ -1,7 +1,7 @@
 ### self ###
 data/*
 data
-frp*
+frp_*
 add_new_user.md
 
 ### Linux ###
