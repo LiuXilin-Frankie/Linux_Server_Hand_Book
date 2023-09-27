@@ -93,13 +93,14 @@ conda --version
 ```
 vi .gitconfig
 ```
+退出vim编辑模式
 
-会通过vim编辑器打开一个文件，正常将 git config 信息插入就好。比如：
-```shell
-user.name=xxxx
-user.email=xxxxx
-user.password=xxxxx
-```
+使用 git config --global 指令设置以下信息
++ user.name
++ user.email
++ user.password
+
+
 保存并退出
 
 查看信息是否生效
