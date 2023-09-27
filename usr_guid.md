@@ -19,6 +19,7 @@ administrator：
   + ssh远程登录
   + 用户修改密码
   + anaconda 环境配置与使用
+  + 配置git
 
 ## Server 设计逻辑
 
@@ -83,3 +84,26 @@ conda init bash
 ```shell
 conda --version
 ```
+
+
+
+
+### 配置git
+由于root用户的.gitconfig无法读取，所以需要先创建文件
+```
+vi .gitconfig
+```
+
+会通过vim编辑器打开一个文件，正常将 git config 信息插入就好。比如：
+```shell
+user.name=xxxx
+user.email=xxxxx
+user.password=xxxxx
+```
+保存并退出
+
+查看信息是否生效
+```
+git config --list
+```
+print的结果应该是您刚才输入的内容，如果没有输出则表示失败
