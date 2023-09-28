@@ -123,3 +123,5 @@ conda install jupyter
 ```
 
 我为所有usr准备上手即用的 pytorch gpu 版本，env名就为 pytorch_GPU. 所有usr可用，但不可修改。
+
+![pytorch_GPU](/img/pytroch_GPU.png)
