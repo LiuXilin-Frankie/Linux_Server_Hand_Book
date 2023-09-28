@@ -108,3 +108,18 @@ vi .gitconfig
 git config --list
 ```
 print的结果应该是您刚才输入的内容，如果没有输出则表示失败
+
+### pytorch
+
+create the conda env and install library
+
+![install_pytorch](/img/install_pytorch.png)
+
+```shell
+conda create -n pytorch_GPU python=3.11
+conda activate pytorch_GPU
+pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu121
+conda install jupyter
+```
+
+我为所有usr准备上手即用的 pytorch gpu 版本，env名就为 pytorch_GPU. 所有usr可用，但不可修改。
